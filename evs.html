@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Groundwater Pollution in Punjab</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+
+body{
+  background:#f4f9f9;
+  color:#333;
+  transition:0.4s;
+}
+
+.dark{
+  background:#121212;
+  color:#eee;
+}
+
+header{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:white;
+  background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+  url('https://images.unsplash.com/photo-1569154941061-e231b4725ef1');
+  background-size:cover;
+}
+
+header h1{
+  font-size:3rem;
+  animation:fadeDown 1.5s;
+}
+
+header p{
+  margin-top:15px;
+  font-size:1.2rem;
+}
+
+@keyframes fadeDown{
+  from{opacity:0;transform:translateY(-40px);}
+  to{opacity:1;transform:translateY(0);}
+}
+
+nav{
+  position:sticky;
+  top:0;
+  background:#00695c;
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  padding:12px;
+  z-index:1000;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+}
+
+.toggle{
+  position:absolute;
+  right:20px;
+  cursor:pointer;
+  color:white;
+}
+
+section{
+  padding:60px 20px;
+  max-width:1100px;
+  margin:auto;
+}
+
+.section-title{
+  font-size:2rem;
+  margin-bottom:20px;
+  color:#00796b;
+}
+
+.card{
+  background:white;
+  padding:20px;
+  border-radius:12px;
+  margin:15px 0;
+  box-shadow:0 4px 12px rgba(0,0,0,0.1);
+  transition:0.3s;
+}
+
+.dark .card{
+  background:#1e1e1e;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+}
+
+img{
+  width:100%;
+  border-radius:10px;
+  margin-top:15px;
+}
+
+.stats{
+  display:flex;
+  justify-content:space-around;
+  flex-wrap:wrap;
+}
+
+.stat{
+  text-align:center;
+  margin:20px;
+}
+
+.stat h2{
+  color:#d32f2f;
+}
+
+.progress{
+  background:#ddd;
+  border-radius:20px;
+  overflow:hidden;
+  margin-top:10px;
+}
+
+.progress div{
+  height:10px;
+  background:#00796b;
+}
+
+footer{
+  background:#004d40;
+  color:white;
+  text-align:center;
+  padding:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#impact">Impact</a>
+  <a href="#solutions">Solutions</a>
+  <span class="toggle" onclick="toggleMode()">🌙</span>
+</nav>
+
+<header>
+  <h1>Groundwater Pollution in Punjab</h1>
+  <p>Its impact on human health & smart solutions</p>
+</header>
+
+<section id="about">
+  <h2 class="section-title">About the Issue</h2>
+  <div class="card">
+    <p>
+      Punjab faces severe groundwater contamination due to pesticides, industrial waste,
+      and overuse of chemicals in agriculture.
+    </p>
+    <img src="https://images.unsplash.com/photo-1581092334497-4b4d8c5c2e9c">
+  </div>
+</section>
+
+<section id="impact">
+  <h2 class="section-title">Health Impact</h2>
+
+  <div class="stats">
+    <div class="stat">
+      <h2>70%</h2>
+      <p>Water contaminated</p>
+    </div>
+    <div class="stat">
+      <h2>High</h2>
+      <p>Cancer cases</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <p>Major health issues include:</p>
+
+    <p>Cancer risk</p>
+    <div class="progress"><div style="width:85%"></div></div>
+
+    <p>Kidney diseases</p>
+    <div class="progress"><div style="width:70%"></div></div>
+
+    <p>Skin disorders</p>
+    <div class="progress"><div style="width:60%"></div></div>
+  </div>
+</section>
+
+<section id="solutions">
+  <h2 class="section-title">Technology-Based Solutions</h2>
+
+  <div class="card">
+    <ul>
+      <li>💧 Smart water purification (RO + UV)</li>
+      <li>📡 IoT groundwater monitoring</li>
+      <li>🧪 Bioremediation techniques</li>
+      <li>🌱 AI-based farming to reduce chemicals</li>
+    </ul>
+    <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231">
+  </div>
+
+</section>
+
+<footer>
+  <p>© 2026 | Environmental Awareness Project</p>
+</footer>
+
+<script>
+function toggleMode(){
+  document.body.classList.toggle("dark");
+}
+</script>
+
+</body>
+</html>
